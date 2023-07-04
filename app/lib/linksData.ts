@@ -18,3 +18,28 @@ export const socialMediaLinks = [
     viewBox: "0 0 24 24",
   },
 ];
+
+export const experiences = [
+  {
+    startYear: "May 2022",
+    endYear: "Present",
+    position: "Full Stack Developer",
+    company: "Hitaji Technologies",
+    url: "https://hitajitech.com",
+    previousRoles: ["Intern"],
+    responsibilities:
+      "Designing and developing full stack solutions for various clients, including a crucial material schedule calculator app for the Uganda Revenue Authority VAT unit. Spearheaded the building of a website for an NGO supporting orphans and human rights advocacy. Focused on delivering high-quality, robust production code, and contributing to collaborative problem-solving, sophisticated design, and quality product.",
+    technologies: ["React", "NextJS", "WordPress", "JavaScript", "TypeScript", "Sanity CMS"],
+  },
+  {
+    startYear: "December 2021",
+    endYear: "May 2022",
+    position: "Intern",
+    company: "Hitaji Technologies",
+    url: "https://hitajitech.com",
+    previousRoles: [],
+    responsibilities:
+      "Supported full stack development of various projects as part of the team. Participated in the development of robust, production-quality code for a variety of client projects, applying my growing knowledge of technologies such as React, WordPress, JavaScript and TypeScript. Also began to contribute to the team's collaborative problem-solving and design discussions.",
+    technologies: ["React", "WordPress", "JavaScript", "TypeScript"],
+  },
+];
