@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface ExperienceProps {
@@ -34,7 +35,7 @@ const Experience = ({
         <div className="z-10 sm:col-span-6">
           <h3 className="font-medium leading-snug text-slate-200">
             <div>
-              <a
+              <Link
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                 href={url}
                 target="_blank"
@@ -61,7 +62,7 @@ const Experience = ({
                     </svg>
                   </span>
                 </span>
-              </a>
+              </Link>
             </div>
           </h3>
           {previousRoles?.map((role) => (

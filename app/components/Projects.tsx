@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface ProjectProps {
@@ -22,7 +23,7 @@ const Project = ({
         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
         <div className="z-10 sm:order-2 sm:col-span-6">
           <h3>
-            <a
+            <Link
               className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
               href={url}
               target="_blank"
@@ -31,7 +32,7 @@ const Project = ({
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>{title}</span>
-            </a>
+            </Link>
           </h3>
           <p className="mt-2 text-sm leading-normal">{description}</p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">

@@ -22,40 +22,40 @@ const Hero = () => {
             In 2021, during the final stretch of my campus life, I embarked on a
             journey into the tech world. Since December 2021, I&apos;ve been
             proud to contribute my skills to{" "}
-            <a
+            <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://www.hitajitech.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               Hitaji Technologies
-            </a>
+            </Link>
             . Here, we&apos;re dedicated to making a difference. Our work
             includes impactful projects like building a software solution for an
             NGO assisting underprivileged Ugandans and developing a precise
             calculation tool for the{" "}
-            <a
+            <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://materialschedule.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
               Uganda Revenue Authority
-            </a>{" "}
+            </Link>{" "}
             quantity surveyors, streamlining their bill of quantities (BOQs)
             processes.
           </p>
           <p className="mb-4">
             On the side, my passion for artificial intelligence has led to the
             creation of an{" "}
-            <a
+            <Link
               className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               href="https://hitajichat.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
               AI-powered app
-            </a>
+            </Link>
             , allowing users to upload documents and query or summarize them,
             optimizing information access.
           </p>
@@ -86,7 +86,7 @@ const Hero = () => {
             ))}
           </ul>
           <div className="mt-12">
-            <a
+            <Link
               className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
               aria-label="View Full Résumé"
               href="/resume.pdf"
@@ -114,7 +114,7 @@ const Hero = () => {
                   </svg>
                 </span>
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

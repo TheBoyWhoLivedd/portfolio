@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface SocialProps {
@@ -10,7 +11,7 @@ interface SocialProps {
 const SocialLinks = ({ link, name, d, viewBox }: SocialProps) => {
   return (
     <li className="mr-5 text-xs">
-      <a
+      <Link
         className="block hover:text-slate-200"
         href={link}
         target="_blank"
@@ -26,7 +27,7 @@ const SocialLinks = ({ link, name, d, viewBox }: SocialProps) => {
         >
           <path d={d}></path>
         </svg>
-      </a>
+      </Link>
     </li>
   );
 };
