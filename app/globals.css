@@ -85,3 +85,25 @@ body {
   color: rgb(148 163 184 / var(--tw-text-opacity));
   -webkit-font-smoothing: antialiased;
 }
+
+.gradient {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  transition-duration: 300ms;
+  background: radial-gradient(
+    600px at 1251px 198px,
+    rgba(29, 78, 216, 0.15),
+    transparent 80%
+  );
+}
+
+@media (min-width: 1024px) {
+  .gradient {
+    position: absolute;
+  }
+}

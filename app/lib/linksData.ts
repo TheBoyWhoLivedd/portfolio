@@ -29,7 +29,14 @@ export const experiences = [
     previousRoles: ["Intern"],
     responsibilities:
       "Designing and developing full stack solutions for various clients, including a crucial material schedule calculator app for the Uganda Revenue Authority VAT unit. Spearheaded the building of a website for an NGO supporting orphans and human rights advocacy. Focused on delivering high-quality, robust production code, and contributing to collaborative problem-solving, sophisticated design, and quality product.",
-    technologies: ["React", "NextJS", "WordPress", "JavaScript", "TypeScript", "Sanity CMS"],
+    technologies: [
+      "React",
+      "NextJS",
+      "WordPress",
+      "JavaScript",
+      "TypeScript",
+      "Sanity CMS",
+    ],
   },
   {
     startYear: "December 2021",
@@ -41,5 +48,32 @@ export const experiences = [
     responsibilities:
       "Supported full stack development of various projects as part of the team. Participated in the development of robust, production-quality code for a variety of client projects, applying my growing knowledge of technologies such as React, WordPress, JavaScript and TypeScript. Also began to contribute to the team's collaborative problem-solving and design discussions.",
     technologies: ["React", "WordPress", "JavaScript", "TypeScript"],
+  },
+];
+
+export const projects = [
+  {
+    title: "Chat with PDFs",
+    description:
+      "AI powered app that allows you to upload a pdf and querry it or summarise it",
+    url: "https://hitajichat.vercel.app",
+    imageSrc: "/hitajichat.png",
+    technologies: ["React", "Node.js", "Express", "Styled Components"],
+  },
+  {
+    title: "Material Schedule Generator",
+    description:
+      "A solution that can take values from a BOQ like concrete volume and spits out materials required like amout of cement,sand",
+    url: "https://materialschedule.vercel.app",
+    imageSrc: "/materialschedule.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "AICM Uganda",
+    description:
+      "Website for Non Profit supporting orphans and human rights advocacy ",
+    url: "https://www.aicmuganda.org",
+    imageSrc: "/aicm.jpg",
+    technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe"],
   },
 ];
