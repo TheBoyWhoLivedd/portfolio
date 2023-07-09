@@ -27,8 +27,7 @@ export default function RootLayout({
             >
               Skip to Content
             </Link>
-              {children}
-            
+            {children}
           </div>
         </div>
       </body>

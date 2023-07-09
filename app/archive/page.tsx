@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import  ProjectTable  from "../components/ProjectTable";
+import { projectsTableData } from "../lib/linksData";
 
 const archive = () => {
   return (
@@ -23,6 +25,10 @@ const archive = () => {
         </svg>
         Ronnie Ayesigwa
       </Link>
+      <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        All Projects
+      </h1>
+      <ProjectTable data={projectsTableData} />
     </div>
   );
 };

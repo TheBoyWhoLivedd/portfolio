@@ -73,7 +73,70 @@ export const projects = [
     description:
       "Website for Non Profit supporting orphans and human rights advocacy ",
     url: "https://www.aicmuganda.org",
-    imageSrc: "/aicm.jpg",
+    imageSrc: "/aicm.png",
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe"],
+  },
+];
+
+export const projectsTableData = [
+  {
+    year: "2023",
+    project: "Chat with PDFs",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["NextJS", "TypeScript", "React"],
+    links: [
+      {
+        url: "https://hitajichat.vercel.app",
+        label: "hitajichat.com",
+      },
+    ],
+  },
+  {
+    year: "2023",
+    project: "Portfolio",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["NextJS", "React", "Tailwind CSS"],
+    links: [
+      {
+        url: "https://github.com/TheBoyWhoLivedd/portfolio",
+        label: "ayesigwaronnie.com",
+      },
+    ],
+  },
+  {
+    year: "2023",
+    project: "Natural Language to SQL",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["NextJS", "SQL", "SCSS"],
+    links: [
+      {
+        url: "https://sqltranslated.vercel.app",
+        label: "sqltranslated.com",
+      },
+    ],
+  },
+  {
+    year: "2022",
+    project: "Material Schedule Generator",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["React", "MongoDB", "NodeJS", "Express"],
+    links: [
+      {
+        url: "https://materialschedule.vercel.app",
+        label: "materialschedule.com",
+      },
+    ],
+  },
+  {
+    year: "2022",
+    project: "AICM Uganda",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["NextJS", "Sanity CMS", "JavaScript"],
+    links: [
+      {
+        url: "https://www.aicmuganda.org",
+        label: "aicmuganda.org",
+      },
+    ],
   },
 ];
