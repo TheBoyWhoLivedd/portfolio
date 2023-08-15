@@ -21,9 +21,20 @@ export const socialMediaLinks = [
 
 export const experiences = [
   {
+    startYear: "June 2022",
+    endYear: "Present",
+    position: "IT Analyst",
+    company: "Uganda Revenue Authority",
+    url: "https://ura.go.ug",
+    // previousRoles: ["Intern"],
+    responsibilities:
+      "Design and build dynamic full-stack solutions tailored to supercharge the business operations of the Uganda Revenue Authority! In tandem with a power-team of developers, consistently delivered top-notch, unyielding production code. Always at the forefront of collaborative brainstorming, cutting-edge design, and impeccable product output",
+    technologies: ["React", "TypeScript", "NextJS"],
+  },
+  {
     startYear: "May 2022",
     endYear: "Present",
-    position: "Full Stack Developer",
+    position: "Full Stack Developer (Part-Time)",
     company: "Hitaji Technologies",
     url: "https://hitajitech.com",
     previousRoles: ["Intern"],
