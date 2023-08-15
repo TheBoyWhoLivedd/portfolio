@@ -55,7 +55,7 @@ export const projects = [
   {
     title: "Chat with PDFs",
     description:
-      "AI powered app that allows you to upload a pdf and querry it or summarise it",
+      "An AI-integrated platform enabling users to upload PDFs and subsequently query or extract concise summaries.",
     url: "https://hitajichat.vercel.app",
     imageSrc: "/hitajichat.png",
     technologies: ["React", "Node.js", "Express", "Styled Components"],
@@ -63,7 +63,7 @@ export const projects = [
   {
     title: "Material Schedule Generator",
     description:
-      "A solution that can take values from a BOQ like concrete volume and spits out materials required like amout of cement,sand",
+      "An innovative tool designed to interpret values from a Bill of Quantities (BOQ), such as concrete volume, and provide a detailed breakdown of necessary materials, including quantities of cement and sand.",
     url: "https://materialschedule.vercel.app",
     imageSrc: "/materialschedule.png",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
@@ -71,7 +71,7 @@ export const projects = [
   {
     title: "AICM Uganda",
     description:
-      "Website for Non Profit supporting orphans and human rights advocacy ",
+      "The official web portal for AICM Uganda, a non-profit organization dedicated to supporting orphans and advocating for human rights.",
     url: "https://www.aicmuganda.org",
     imageSrc: "/aicm.png",
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe"],
@@ -100,6 +100,18 @@ export const projectsTableData = [
       {
         url: "https://github.com/TheBoyWhoLivedd/portfolio",
         label: "ayesigwaronnie.com",
+      },
+    ],
+  },
+  {
+    year: "2023",
+    project: "Web Form Concept (Local Excise Duty)",
+    madeAt: "Uganda Revenue Authority",
+    builtWith: ["NextJS", "React", "Tailwind CSS", "Radix UI"],
+    links: [
+      {
+        url: "https://led-form.vercel.app",
+        label: "ledform.app",
       },
     ],
   },
