@@ -23,7 +23,7 @@ export const experiences = [
   {
     startYear: "June 2022",
     endYear: "Present",
-    position: "IT Analyst",
+    position: "Full Stack Developer",
     company: "Uganda Revenue Authority",
     url: "https://ura.go.ug",
     // previousRoles: ["Intern"],
@@ -91,6 +91,31 @@ export const projects = [
 
 export const projectsTableData = [
   {
+    year: "2024",
+    project: "Risk Management System",
+    madeAt: "Compliance Division",
+    builtWith: ["MongoDB", "Node.js", "TypeScript", "Next.js"],
+    links: [
+      {
+        url: "https://github.com/TheBoyWhoLivedd/dts-penalty-client",
+        label: "GitHub Repository",
+      },
+    ],
+  },
+
+  {
+    year: "2024",
+    project: "Project Management Solution",
+    madeAt: "Business Analysis Division",
+    builtWith: ["React", "Node.JS", "MongoDB", "RadixUI", "RTK Query"],
+    links: [
+      {
+        url: "https://github.com/TheBoyWhoLivedd/Project-Progress-Tracker-Client",
+        label: "GitHub Repository",
+      },
+    ],
+  },
+  {
     year: "2023",
     project: "Chat with PDFs",
     madeAt: "Hitaji Technologies",
@@ -99,6 +124,24 @@ export const projectsTableData = [
       {
         url: "https://hitajichat.vercel.app",
         label: "hitajichat.com",
+      },
+    ],
+  },
+  {
+    year: "2023",
+    project: "Leave Management System",
+    madeAt: "Internal Project",
+    builtWith: [
+      "Next.js",
+      "TypeScript",
+      "React Server Components",
+      "Tailwind CSS",
+      "ShadcnUI",
+    ],
+    links: [
+      {
+        url: "https://github.com/TheBoyWhoLivedd/leave-management",
+        label: "GitHub Repository",
       },
     ],
   },

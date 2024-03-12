@@ -89,7 +89,9 @@ const Hero = () => {
             <Link
               className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
               aria-label="View Full Résumé"
-              href="/resume.pdf"
+              href="https://utfs.io/f/4361f144-7a01-4cf0-8120-afe33d22a970-cmi2jc.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span>
                 <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
