@@ -93,7 +93,7 @@ export const projectsTableData = [
   {
     year: "2024",
     project: "Risk Management System",
-    madeAt: "Compliance Division",
+    madeAt: "Uganda Revenue Authority",
     builtWith: ["MongoDB", "Node.js", "TypeScript", "Next.js"],
     links: [
       {
@@ -106,7 +106,7 @@ export const projectsTableData = [
   {
     year: "2024",
     project: "Project Management Solution",
-    madeAt: "Business Analysis Division",
+    madeAt: "Uganda Revenue Authority",
     builtWith: ["React", "Node.JS", "MongoDB", "RadixUI", "RTK Query"],
     links: [
       {
@@ -130,7 +130,7 @@ export const projectsTableData = [
   {
     year: "2023",
     project: "Leave Management System",
-    madeAt: "Internal Project",
+    madeAt: "Uganda Revenue Authority",
     builtWith: [
       "Next.js",
       "TypeScript",

@@ -18,7 +18,7 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ data }) => {
     <table id="content" className="mt-12 w-full border-collapse text-left">
       <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
         <tr>
-          <th className="py-4 pr-8 text-sm font-semibold text-slate-200">
+          <th className=" hidden md:block py-4 pr-8 text-sm font-semibold text-slate-200">
             Year
           </th>
           <th className="py-4 pr-8 text-sm font-semibold text-slate-200">
@@ -30,7 +30,7 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ data }) => {
           <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
             Built with
           </th>
-          <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell">
+          <th className="py-4 pr-8 text-sm font-semibold text-slate-200 sm:table-cell">
             Link
           </th>
         </tr>
@@ -41,7 +41,7 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ data }) => {
             key={index}
             className="border-b border-slate-300/10 last:border-none"
           >
-            <td className="py-4 pr-4 align-top text-sm">
+            <td className="hidden md:block py-4 pr-4 align-top text-sm">
               <div className="translate-y-px">{row.year}</div>
             </td>
             <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
@@ -68,7 +68,7 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ data }) => {
                 ))}
               </ul>
             </td>
-            <td className="hidden py-4 align-top sm:table-cell">
+            <td className="py-4 align-top sm:table-cell">
               <ul className="translate-y-1">
                 {row.links.map((link, index) => (
                   <li key={index} className="mb-1 flex items-center">
