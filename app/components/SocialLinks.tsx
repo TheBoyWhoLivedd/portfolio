@@ -12,7 +12,7 @@ const SocialLinks = ({ link, name, d, viewBox }: SocialProps) => {
   return (
     <li className="mr-5 text-xs">
       <Link
-        className="block hover:text-slate-200"
+        className="block hover:text-secondary"
         href={link}
         target="_blank"
         rel="noreferrer"

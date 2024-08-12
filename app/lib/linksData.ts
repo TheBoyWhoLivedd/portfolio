@@ -64,12 +64,12 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Chat with PDFs",
+    title: "AEOI Portal (Automatic Exchange of Information)",
     description:
-      "An AI-integrated platform enabling users to upload PDFs and subsequently query or extract concise summaries.",
-    url: "https://hitajichat.vercel.app",
-    imageSrc: "/hitajichat.png",
-    technologies: ["React", "Node.js", "Express", "Styled Components"],
+      "A highly secure, scalable web application developed to facilitate the automatic exchange of financial data between banks and the Uganda Revenue Authority (URA).",
+    url: "https://aeoi-client.vercel.app",
+    imageSrc: "/aeoi-client.gif",
+    technologies: ["React", "NextJS", "TypeScript", "Quarkus", "ShadcnUI"],
   },
   {
     title: "Material Schedule Generator",
@@ -77,7 +77,7 @@ export const projects = [
       "An innovative tool designed to interpret values from a Bill of Quantities (BOQ), such as concrete volume, and provide a detailed breakdown of necessary materials, including quantities of cement and sand.",
     url: "https://materialschedule.vercel.app",
     imageSrc: "/materialschedule.png",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.JS"],
   },
   {
     title: "AICM Uganda",
@@ -85,7 +85,7 @@ export const projects = [
       "The official web portal for AICM Uganda, a non-profit organization dedicated to supporting orphans and advocating for human rights.",
     url: "https://www.aicmuganda.org",
     imageSrc: "/aicm.png",
-    technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe"],
+    technologies: ["React", "Redux", "Node.JS", "Express", "MongoDB", "Stripe"],
   },
 ];
 
@@ -94,7 +94,7 @@ export const projectsTableData = [
     year: "2024",
     project: "Risk Management System",
     madeAt: "Uganda Revenue Authority",
-    builtWith: ["MongoDB", "Node.js", "TypeScript", "Next.js"],
+    builtWith: ["MongoDB", "Node.JS", "TypeScript", "Next.js"],
     links: [
       {
         url: "https://github.com/TheBoyWhoLivedd/dts-penalty-client",

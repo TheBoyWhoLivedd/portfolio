@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import  ProjectTable  from "../components/ProjectTable";
+import ProjectTable from "../components/ProjectTable";
 import { projectsTableData } from "../lib/linksData";
 
 const archive = () => {
   return (
     <div className="lg:py-24">
       <Link
-        className="group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300"
+        className="group mb-2 inline-flex items-center font-semibold leading-tight text-secondary"
         href="/"
       >
         <svg
@@ -25,7 +25,7 @@ const archive = () => {
         </svg>
         Ronnie Ayesigwa
       </Link>
-      <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
         All Projects
       </h1>
       <ProjectTable data={projectsTableData} />

@@ -12,8 +12,8 @@ const Hero = () => {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         aria-label="About Me"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-[#e3dfd3] px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-secondary lg:sr-only">
             About
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Hero = () => {
             journey into the tech world. Since December 2021, I&apos;ve been
             proud to contribute my skills to{" "}
             <Link
-              className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+              className="font-medium text-secondary hover:text-black focus-visible:text-black"
               href="https://www.hitajitech.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Hero = () => {
             NGO assisting underprivileged Ugandans and developing a precise
             calculation tool for the{" "}
             <Link
-              className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+              className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
               href="https://materialschedule.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const Hero = () => {
             On the side, my passion for artificial intelligence has led to the
             creation of an{" "}
             <Link
-              className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+              className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
               href="https://hitajichat.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,8 +73,8 @@ const Hero = () => {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         aria-label="Work experience"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-[#e3dfd3] px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-secondary lg:sr-only">
             Experience
           </h2>
         </div>
@@ -87,7 +87,7 @@ const Hero = () => {
           </ul>
           <div className="mt-12">
             <Link
-              className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
+              className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Résumé"
               href="https://utfs.io/f/4361f144-7a01-4cf0-8120-afe33d22a970-cmi2jc.pdf"
               target="_blank"
@@ -125,8 +125,8 @@ const Hero = () => {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         aria-label="Selected projects"
       >
-        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-[#e3dfd3] px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-secondary lg:sr-only">
             Projects
           </h2>
         </div>
@@ -138,7 +138,7 @@ const Hero = () => {
           </ul>
           <div className="mt-12">
             <Link
-              className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
+              className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Project Archive"
               href="/archive"
             >
