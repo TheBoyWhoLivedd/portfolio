@@ -31,8 +31,7 @@ const Hero = () => {
               Hitaji Technologies
             </Link>
             . Here, we&apos;re dedicated to making a difference. Our work
-            includes impactful projects like building a software solution for an
-            NGO assisting underprivileged Ugandans and developing a precise
+            includes impactful projects like building innovative solutions in finance and developing a precise
             calculation tool for the{" "}
             <Link
               className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
@@ -46,18 +45,13 @@ const Hero = () => {
             processes.
           </p>
           <p className="mb-4">
-            On the side, my passion for artificial intelligence has led to the
-            creation of an{" "}
-            <Link
-              className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
-              href="https://hitajichat.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              AI-powered app
-            </Link>
-            , allowing users to upload documents and query or summarize them,
-            optimizing information access.
+            On the side, my work with artificial intelligence has involved
+            testing and evaluating Gemini&apos;s coding capabilities on
+            open-source repositories to identify implementation gaps, leveraging
+            insights to create RLHF datasets for advanced AI model training.
+            This has deepened my expertise in complex coding structures,
+            like parsers and linters, while contributing to the refinement
+            and reliability of state-of-the-art AI coding models.
           </p>
           <p className="mb-4">
             When I&apos;m not coding or innovating, I&apos;m often found in the
@@ -89,7 +83,7 @@ const Hero = () => {
             <Link
               className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Résumé"
-              href="https://utfs.io/f/4361f144-7a01-4cf0-8120-afe33d22a970-cmi2jc.pdf"
+              href="https://utfs.io/f/BhhFqnIpzN8iFR3odi0SyKjEzIPH8A1OlnirqFJ4bWTov39u"
               target="_blank"
               rel="noopener noreferrer"
             >

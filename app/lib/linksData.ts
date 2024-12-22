@@ -64,6 +64,14 @@ export const experiences = [
 
 export const projects = [
   {
+    title: "Hitaji Save",
+    description:
+      "A smart expense tracking app featuring an AI assistant that helps manage your finances through natural conversation. Users can speak to the AI about their transactions or upload receipt images, and the assistant automatically extracts and logs the transaction details. The AI also provides personalized financial insights and budgeting recommendations based on spending patterns.",
+    url: "https://save.hitajitechnologies.com",
+    imageSrc: "/hitaji-save-dark.png",
+    technologies: ["React", "Node.js", "Docker", "AI/ML", "TypeScript"],
+  },
+  {
     title: "AEOI Portal (Automatic Exchange of Information)",
     description:
       "A highly secure, scalable web application developed to facilitate the automatic exchange of financial data between banks and the Uganda Revenue Authority (URA).",
@@ -78,14 +86,6 @@ export const projects = [
     url: "https://materialschedule.vercel.app",
     imageSrc: "/materialschedule.png",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Node.JS"],
-  },
-  {
-    title: "AICM Uganda",
-    description:
-      "The official web portal for AICM Uganda, a non-profit organization dedicated to supporting orphans and advocating for human rights.",
-    url: "https://www.aicmuganda.org",
-    imageSrc: "/aicm.png",
-    technologies: ["React", "Redux", "Node.JS", "Express", "MongoDB", "Stripe"],
   },
 ];
 
