@@ -19,39 +19,50 @@ const Hero = () => {
         </div>
         <div>
           <p className="mb-4">
-            In 2021, during the final stretch of my campus life, I embarked on a
-            journey into the tech world. Since December 2021, I&apos;ve been
-            proud to contribute my skills to{" "}
+            I&apos;m a full-stack developer, optimist, and lifelong learner who
+            began my tech journey in 2020. I&apos;ve had the privilege of
+            contributing to impactful organizations like{" "}
             <Link
-              className="font-medium text-secondary hover:text-black focus-visible:text-black"
-              href="https://www.hitajitech.com"
+              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
+              href="https://elitesoftwareautomation.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              Elite Software Automation
+            </Link>{" "}
+            and{" "}
+            <span className="font-medium text-secondary">
               Hitaji Technologies
-            </Link>
-            . Here, we&apos;re dedicated to making a difference. Our work
-            includes impactful projects like building innovative solutions in finance and developing a precise
-            calculation tool for the{" "}
+            </span>
+            . My work involves designing and developing full-stack solutions for
+            various clients, including a crucial material schedule calculator
+            app for the{" "}
             <Link
               className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
-              href="https://materialschedule.vercel.app"
+              href="https://ura.go.ug/en/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Uganda Revenue Authority
-            </Link>{" "}
-            quantity surveyors, streamlining their bill of quantities (BOQs)
-            processes.
+            </Link>
+            .
           </p>
           <p className="mb-4">
-            On the side, my work with artificial intelligence has involved
-            testing and evaluating Gemini&apos;s coding capabilities on
-            open-source repositories to identify implementation gaps, leveraging
-            insights to create RLHF datasets for advanced AI model training.
-            This has deepened my expertise in complex coding structures,
-            like parsers and linters, while contributing to the refinement
-            and reliability of state-of-the-art AI coding models.
+            I have also had the opportunity to work with{" "}
+            <Link
+              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
+              href="https://www.turing.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Turing (Google - Deepmind)
+            </Link>
+            , where I tested and evaluated Gemini&apos;s coding capabilities on
+            open-source repositories to identify implementation gaps. This
+            experience allowed me to leverage insights to create RLHF datasets
+            for advanced AI model training, deepening my expertise in complex
+            coding structures and contributing to the refinement of
+            state-of-the-art AI coding models.
           </p>
           <p className="mb-4">
             When I&apos;m not coding or innovating, I&apos;m often found in the
@@ -83,7 +94,7 @@ const Hero = () => {
             <Link
               className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Résumé"
-              href="https://utfs.io/f/BhhFqnIpzN8iFR3odi0SyKjEzIPH8A1OlnirqFJ4bWTov39u"
+              href="https://1d1d80ogr0.ufs.sh/f/BhhFqnIpzN8i2cc3rT0HzmRc21DSPwhl6ve4yuAZUNVIEqK3"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -14,10 +14,13 @@ const Header = () => {
           <Link href="/">Ronnie Ayesigwa</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-secondary sm:text-xl">
-          Full Stack Developer at Hitaji Technologies
+          Software Engineer at Elite Software Automation
         </h2>
+        {/* <h2 className="mt-3 text-lg font-medium tracking-tight text-secondary sm:text-xl">
+          Full Stack Developer at Hitaji Technologies
+        </h2> */}
         <p className="mt-4 max-w-xs leading-normal">
-          I&apos;m a frontend developer, optimist, and life long learner. I
+          I&apos;m a fullstack developer, optimist, and life long learner. I
           create web-based solutions and digital experiences that prioritize
           accessibility and inclusivity.
         </p>

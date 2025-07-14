@@ -21,25 +21,45 @@ export const socialMediaLinks = [
 
 export const experiences = [
   {
-    startYear: "June 2022",
+    startYear: "Jan 2025",
     endYear: "Present",
-    position: "Full Stack Developer",
+    position: "Software Design Engineer",
+    company: "Elite Software Automation",
+    url: "https://elitesoftwareautomation.com/",
+    responsibilities:
+      "Designing and implementing complex, end-to-end digital systems that streamline and scale operational workflows across many industries such as education, auto finance, marketing, and nonprofit organizations",
+    technologies: ["React", "Node.js", "System Design"],
+  },
+  {
+    startYear: "July 2024",
+    endYear: "Dec 2024",
+    position: "Node/React Engineer",
+    company: "Turing (Google - Deepmind)",
+    url: "https://www.turing.com/",
+    responsibilities:
+      "Tested and evaluated Gemini's coding capabilities on open-source repositories to identify implementation gaps, leveraging insights to create RLHF datasets for advanced AI model training. Gained extensive expertise in complex coding structures, like parsers and linters, while contributing to the refinement and reliability of state-of-the-art AI coding models.",
+    technologies: ["Node.js", "React", "AI/ML"],
+  },
+  {
+    startYear: "June 2022",
+    endYear: "June 2024",
+    position: "Software Engineer",
     company: "Uganda Revenue Authority",
-    url: "https://ura.go.ug",
+    url: "https://ura.go.ug/en/",
     // previousRoles: ["Intern"],
     responsibilities:
       "Design and build dynamic full-stack solutions tailored to supercharge the business operations of the Uganda Revenue Authority! In tandem with a power-team of developers, consistently delivered top-notch, unyielding production code. Always at the forefront of collaborative brainstorming, cutting-edge design, and impeccable product output",
-    technologies: ["React", "TypeScript", "NextJS"],
+    technologies: ["React", "TypeScript", "NextJS", "Java", "Quarkus"],
   },
   {
-    startYear: "May 2022",
+    startYear: "June 2020",
     endYear: "Present",
-    position: "Full Stack Developer (Part-Time)",
+    position: "Full stack developer (Part-Time)",
     company: "Hitaji Technologies",
     url: "https://hitajitech.com",
     previousRoles: ["Intern"],
     responsibilities:
-      "Designing and developing full stack solutions for various clients, including a crucial material schedule calculator app for the Uganda Revenue Authority VAT unit. Spearheaded the building of a website for an NGO supporting orphans and human rights advocacy. Focused on delivering high-quality, robust production code, and contributing to collaborative problem-solving, sophisticated design, and quality product.",
+      "Designing and developing full stack solutions for various clients, including a crucial material schedule calculator app for the Uganda Revenue Authority VAT unit. Spearheaded the building of multiple solutions for various clients. Focused on delivering high-quality, robust production code, and contributing to collaborative problem-solving, sophisticated design, and quality product.",
     technologies: [
       "React",
       "NextJS",
@@ -47,52 +67,186 @@ export const experiences = [
       "JavaScript",
       "TypeScript",
       "Sanity CMS",
+      "Node.js",
     ],
-  },
-  {
-    startYear: "December 2021",
-    endYear: "May 2022",
-    position: "Intern",
-    company: "Hitaji Technologies",
-    url: "https://hitajitech.com",
-    previousRoles: [],
-    responsibilities:
-      "Supported full stack development of various projects as part of the team. Participated in the development of robust, production-quality code for a variety of client projects, applying my growing knowledge of technologies such as React, WordPress, JavaScript and TypeScript. Also began to contribute to the team's collaborative problem-solving and design discussions.",
-    technologies: ["React", "WordPress", "JavaScript", "TypeScript"],
   },
 ];
 
 export const projects = [
   {
     title: "Hitaji Save",
+    slug: "hitaji-save",
     description:
       "A smart expense tracking app featuring an AI assistant that helps manage your finances through natural conversation. Users can speak to the AI about their transactions or upload receipt images, and the assistant automatically extracts and logs the transaction details. The AI also provides personalized financial insights and budgeting recommendations based on spending patterns.",
     url: "https://save.hitajitechnologies.com",
     imageSrc: "/hitaji-save-dark.png",
     technologies: ["React", "Node.js", "Docker", "AI/ML", "TypeScript"],
+    isNDA: false,
+    clientProblem:
+      "Personal finance management is often tedious and time-consuming. People struggle to consistently track expenses, categorize transactions, and gain meaningful insights from their spending patterns.",
+    solution:
+      "I developed an AI-powered expense tracking app that makes financial management conversational and intuitive. Users can simply speak to the AI about their expenses or upload receipt photos, and the system handles all the categorization and tracking automatically.",
+    keyFeatures: [
+      "Natural language expense logging via voice or text",
+      "AI-powered receipt scanning and data extraction",
+      "Intelligent expense categorization and tagging",
+      "Personalized financial insights and recommendations",
+      "Budget tracking with smart alerts",
+      "Export capabilities for tax and accounting purposes",
+      "Multi-currency support",
+      "Data visualization and spending trends",
+    ],
+    impact:
+      "Users report 80% reduction in time spent on expense tracking and improved financial awareness through AI-generated insights.",
+    duration: "4 months",
+    teamSize: "2 developers",
+    role: "Full-Stack Developer & AI Integration Specialist",
   },
   {
-    title: "AEOI Portal (Automatic Exchange of Information)",
+    title: "AutoFinance360",
+    slug: "autofinance360",
     description:
-      "A highly secure, scalable web application developed to facilitate the automatic exchange of financial data between banks and the Uganda Revenue Authority (URA).",
-    url: "https://aeoi-client.vercel.app",
-    imageSrc: "/aeoi-client.gif",
-    technologies: ["React", "NextJS", "TypeScript", "Quarkus", "ShadcnUI"],
+      "Engineered an end-to-end dealership operations platform that digitized and unified processes across sales, underwriting, inventory management, and collections for a multi-entity organization.",
+    url: "",
+    imageSrc: "",
+    technologies: ["React", "Node.js", "Workflow Automation", "System Design"],
+    isNDA: true,
+    clientProblem:
+      "A multi-entity auto finance organization was struggling with fragmented operations across sales, underwriting, inventory management, and collections. Manual processes led to inefficiencies, data silos, and poor customer experience.",
+    solution:
+      "I designed and engineered a comprehensive dealership operations platform that unified all business processes into a single, cohesive system. The platform automated workflow transitions, integrated all stakeholders, and provided real-time visibility across the entire operation.",
+    keyFeatures: [
+      "Unified dashboard for sales, finance, and operations teams",
+      "Automated underwriting workflow with decision trees",
+      "Real-time inventory management and tracking",
+      "Integrated collections and payment processing",
+      "Multi-entity support with role-based access control",
+      "Advanced reporting and analytics suite",
+    ],
+    impact:
+      "Reduced processing time by 70%, improved customer satisfaction, and enabled the organization to scale operations across multiple entities seamlessly.",
+    duration: "6 months",
+    teamSize: "3 developers",
+    role: "Lead Full-Stack Developer & System Architect",
   },
   {
-    title: "Material Schedule Generator",
+    title: "FaithOps Member Engagement System",
+    slug: "faith-ops",
     description:
-      "An innovative tool designed to interpret values from a Bill of Quantities (BOQ), such as concrete volume, and provide a detailed breakdown of necessary materials, including quantities of cement and sand.",
-    url: "https://materialschedule.vercel.app",
-    imageSrc: "/materialschedule.png",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.JS"],
+      "Architected a suite of modular digital systems to drive engagement and retention for a large, multi-entity organization spanning ministry, education, retail, and events.",
+    url: "",
+    imageSrc: "", // No image provided, will use placeholder
+    technologies: ["System Design", "Workflow Automation", "React", "Node.js"],
+    isNDA: true,
+    clientProblem:
+      "A large, multi-entity organization was facing challenges in driving engagement and retaining members across its diverse operations including ministry, education, retail, and events.",
+    solution:
+      "I architected a comprehensive suite of modular digital systems to solve this. This included a member lifecycle management system, over 15 program-specific workflows, automated feedback loops for accountability, and a donation and reconciliation workflow with OCR for financial integrity.",
+    keyFeatures: [
+      "Comprehensive member lifecycle management",
+      "15+ program-specific automated workflows",
+      "Automated feedback and SOP adherence monitoring",
+      "Donation and reconciliation workflow with OCR",
+      "Centralized system for a multi-entity organization",
+    ],
+    impact:
+      "Drove engagement and retention, improved operational accountability, and streamlined financial reconciliation processes across the organization.",
+    duration: "Ongoing",
+    teamSize: "4 developers",
+    role: "System Architect",
   },
 ];
 
 export const projectsTableData = [
   {
+    year: "2025",
+    project: "EduTrack360",
+    slug: "edutrack-360",
+    madeAt: "Elite Software Automation",
+    builtWith: ["React", "Next.js", "System Design", "Node.JS"],
+    links: [],
+    isNDA: true,
+    description:
+      "A comprehensive system to manage operational, academic, and administrative workflows for a multi-division nonprofit charter school.",
+    clientProblem:
+      "A nonprofit charter school was hampered by inefficient and disconnected workflows for student enrollment, staff management, and budgeting, leading to administrative overhead and lack of real-time visibility.",
+    solution:
+      "I engineered a unified system with modules for student applications (including lottery and waitlist logic), re-enrollment, staff hiring/onboarding, and dynamic budgeting with grant tracking. The system uses rules-driven decision trees to manage complex parallel processes.",
+  },
+  {
+    year: "2025",
+    project: "AutoFinance360",
+    slug: "autofinance360",
+    madeAt: "Elite Software Automation",
+    builtWith: ["React", "Node.js", "Workflow Automation", "System Design"],
+    links: [],
+    isNDA: true,
+    description:
+      "Engineered an end-to-end dealership operations platform that digitized and unified processes across sales, underwriting, inventory management, and collections for a multi-entity organization.",
+    clientProblem:
+      "A multi-entity auto finance organization was struggling with fragmented operations across sales, underwriting, inventory management, and collections. Manual processes led to inefficiencies, data silos, and poor customer experience.",
+    solution:
+      "I designed and engineered a comprehensive dealership operations platform that unified all business processes into a single, cohesive system. The platform automated workflow transitions, integrated all stakeholders, and provided real-time visibility across the entire operation.",
+  },
+  {
+    year: "2025",
+    project: "FaithOps Member Engagement System",
+    slug: "faith-ops",
+    madeAt: "Elite Software Automation",
+    builtWith: ["System Design", "Workflow Automation", "React", "Node.js"],
+    links: [],
+    isNDA: true,
+    description:
+      "Architected a suite of modular digital systems to drive engagement and retention for a large, multi-entity organization spanning ministry, education, retail, and events.",
+    clientProblem:
+      "A large, multi-entity organization was facing challenges in driving engagement and retaining members across its diverse operations including ministry, education, retail, and events.",
+    solution:
+      "I architected a comprehensive suite of modular digital systems to solve this. This included a member lifecycle management system, over 15 program-specific workflows, automated feedback loops for accountability, and a donation and reconciliation workflow with OCR for financial integrity.",
+  },
+  {
+    year: "2024",
+    project: "Hitaji Save",
+    slug: "hitaji-save",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["React", "Node.js", "Docker", "AI/ML", "TypeScript"],
+    links: [
+      {
+        url: "https://save.hitajitechnologies.com",
+        label: "save.hitajitechnologies.com",
+      },
+    ],
+    isNDA: false,
+    description:
+      "A smart expense tracking app featuring an AI assistant that helps manage your finances through natural conversation. Users can speak to the AI about their transactions or upload receipt images, and the assistant automatically extracts and logs the transaction details. The AI also provides personalized financial insights and budgeting recommendations based on spending patterns.",
+    clientProblem:
+      "Personal finance management is often tedious and time-consuming. People struggle to consistently track expenses, categorize transactions, and gain meaningful insights from their spending patterns.",
+    solution:
+      "I developed an AI-powered expense tracking app that makes financial management conversational and intuitive. Users can simply speak to the AI about their expenses or upload receipt photos, and the system handles all the categorization and tracking automatically.",
+  },
+  {
+    year: "2024",
+    project: "AEOI Portal",
+    slug: "aeoi-portal",
+    madeAt: "Uganda Revenue Authority",
+    builtWith: ["React", "NextJS", "TypeScript", "Quarkus", "ShadcnUI"],
+    links: [
+      {
+        url: "https://aeoi-client.vercel.app",
+        label: "aeoi-client.vercel.app",
+      },
+    ],
+    isNDA: true,
+    description:
+      "A highly secure, scalable web application developed to facilitate the automatic exchange of financial data between banks and the Uganda Revenue Authority (URA).",
+    clientProblem:
+      "The Uganda Revenue Authority needed a secure, compliant system for banks to automatically exchange financial information as required by international tax transparency regulations. Manual processes were error-prone and didn't meet regulatory requirements.",
+    solution:
+      "I developed a comprehensive portal that enables banks to securely submit customer financial data to URA in compliance with OECD Common Reporting Standard (CRS) requirements. The system ensures data integrity, security, and regulatory compliance.",
+  },
+  {
     year: "2024",
     project: "Risk Management System",
+    slug: "risk-management-system",
     madeAt: "Uganda Revenue Authority",
     builtWith: ["MongoDB", "Node.JS", "TypeScript", "Next.js"],
     links: [
@@ -101,11 +255,18 @@ export const projectsTableData = [
         label: "GitHub Repository",
       },
     ],
+    isNDA: true,
+    description:
+      "A comprehensive risk assessment and management platform for tax compliance and penalty calculation.",
+    clientProblem:
+      "URA needed an automated system to assess tax compliance risks and calculate penalties consistently across different tax types and scenarios.",
+    solution:
+      "Built a sophisticated risk management platform that automates risk scoring, penalty calculations, and compliance monitoring with configurable rules and real-time analytics.",
   },
-
   {
     year: "2024",
     project: "Project Management Solution",
+    slug: "project-management-solution",
     madeAt: "Uganda Revenue Authority",
     builtWith: ["React", "Node.JS", "MongoDB", "RadixUI", "RTK Query"],
     links: [
@@ -114,10 +275,18 @@ export const projectsTableData = [
         label: "GitHub Repository",
       },
     ],
+    isNDA: true,
+    description:
+      "An enterprise project management platform designed to track progress, resources, and deliverables across multiple departments.",
+    clientProblem:
+      "URA struggled with project visibility, resource allocation, and deadline management across multiple concurrent initiatives and departments.",
+    solution:
+      "Developed a comprehensive project management solution with real-time progress tracking, resource management, and automated reporting capabilities.",
   },
   {
     year: "2023",
     project: "Chat with PDFs",
+    slug: "chat-with-pdfs",
     madeAt: "Hitaji Technologies",
     builtWith: ["NextJS", "TypeScript", "React"],
     links: [
@@ -126,10 +295,18 @@ export const projectsTableData = [
         label: "hitajichat.com",
       },
     ],
+    isNDA: true,
+    description:
+      "An AI-powered document interaction platform that allows users to have natural conversations with PDF documents.",
+    clientProblem:
+      "Reading and extracting information from large PDF documents is time-consuming and often inefficient, especially when looking for specific information.",
+    solution:
+      "Created an AI-powered platform that allows users to upload PDFs and ask questions in natural language, getting instant, accurate answers extracted from the document content.",
   },
   {
     year: "2023",
     project: "Leave Management System",
+    slug: "leave-management-system",
     madeAt: "Uganda Revenue Authority",
     builtWith: [
       "Next.js",
@@ -144,10 +321,18 @@ export const projectsTableData = [
         label: "GitHub Repository",
       },
     ],
+    isNDA: true,
+    description:
+      "A comprehensive leave management system for tracking employee time off, approvals, and reporting.",
+    clientProblem:
+      "Manual leave management processes led to scheduling conflicts, approval delays, and poor visibility into staff availability.",
+    solution:
+      "Built a digital leave management system with automated workflows, real-time approval processes, and comprehensive reporting for better workforce planning.",
   },
   {
     year: "2023",
     project: "Portfolio",
+    slug: "portfolio-website",
     madeAt: "Hitaji Technologies",
     builtWith: ["NextJS", "React", "Tailwind CSS"],
     links: [
@@ -156,10 +341,18 @@ export const projectsTableData = [
         label: "ayesigwaronnie.com",
       },
     ],
+    isNDA: false,
+    description:
+      "A modern, responsive portfolio website showcasing my work and experience.",
+    clientProblem:
+      "Needed a professional online presence to showcase my work, skills, and experience to potential clients and employers.",
+    solution:
+      "Designed and developed a clean, modern portfolio website with responsive design, smooth animations, and optimized performance.",
   },
   {
     year: "2023",
     project: "Web Form Concept (Local Excise Duty)",
+    slug: "led-form",
     madeAt: "Uganda Revenue Authority",
     builtWith: ["NextJS", "React", "Tailwind CSS", "Radix UI"],
     links: [
@@ -168,10 +361,18 @@ export const projectsTableData = [
         label: "ledform.app",
       },
     ],
+    isNDA: true,
+    description:
+      "A streamlined web form for Local Excise Duty submissions with real-time validation and user-friendly interface.",
+    clientProblem:
+      "The existing paper-based Local Excise Duty submission process was inefficient, error-prone, and difficult to track.",
+    solution:
+      "Created a digital form with intelligent validation, auto-calculations, and seamless submission process that improved accuracy and user experience.",
   },
   {
     year: "2023",
     project: "Natural Language to SQL",
+    slug: "natural-language-sql",
     madeAt: "Hitaji Technologies",
     builtWith: ["NextJS", "SQL", "SCSS"],
     links: [
@@ -180,10 +381,18 @@ export const projectsTableData = [
         label: "sqltranslated.com",
       },
     ],
+    isNDA: false,
+    description:
+      "An AI-powered tool that converts natural language queries into SQL statements, making database querying accessible to non-technical users.",
+    clientProblem:
+      "Non-technical team members struggled to extract data from databases, requiring constant developer support for simple queries.",
+    solution:
+      "Built an AI-powered tool that translates plain English questions into SQL queries, democratizing data access across the organization.",
   },
   {
     year: "2022",
     project: "Material Schedule Generator",
+    slug: "material-schedule-generator",
     madeAt: "Hitaji Technologies",
     builtWith: ["React", "MongoDB", "NodeJS", "Express"],
     links: [
@@ -192,17 +401,33 @@ export const projectsTableData = [
         label: "materialschedule.com",
       },
     ],
+    isNDA: true,
+    description:
+      "A specialized calculation tool for generating material schedules for the Uganda Revenue Authority VAT unit.",
+    clientProblem:
+      "Manual calculation of material schedules was time-consuming, error-prone, and created bottlenecks in VAT processing.",
+    solution:
+      "Developed an automated calculation engine that generates accurate material schedules instantly, reducing processing time from hours to minutes.",
   },
   {
     year: "2022",
     project: "AICM Uganda",
+    slug: "aicm-uganda",
     madeAt: "Hitaji Technologies",
     builtWith: ["NextJS", "Sanity CMS", "JavaScript"],
+    imageSrc: "/aicm.png",
     links: [
       {
         url: "https://www.aicmuganda.org",
         label: "aicmuganda.org",
       },
     ],
+    isNDA: false,
+    description:
+      "A modern website for the Association of Internal Control Managers Uganda with content management capabilities.",
+    clientProblem:
+      "AICM Uganda needed a professional website to showcase their services, events, and resources with easy content management.",
+    solution:
+      "Built a modern, responsive website with integrated CMS allowing the organization to easily manage content, events, and member information.",
   },
 ];
