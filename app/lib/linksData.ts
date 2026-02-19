@@ -21,13 +21,51 @@ export const socialMediaLinks = [
 
 export const experiences = [
   {
-    startYear: "Jan 2025",
+    startYear: "June 2020",
     endYear: "Present",
+    position: "Lead Engineer",
+    company: "Hitaji Technologies",
+    url: "https://hitaji-360-marketing.vercel.app/",
+    previousRoles: ["Full Stack Developer (Part-Time)"],
+    responsibilities:
+      "Leading the architecture and development of Hitaji 360, a multi-tenant SaaS platform providing shared foundations — payments, chat, notifications, AI assistant, and identity — with vertical products like Edu360 for school management. Building across 9 services spanning .NET, NestJS, Next.js, and React Native (Expo), serving both web and mobile clients.",
+    technologies: [
+      "React",
+      "React Native",
+      "NestJS",
+      ".NET",
+      "Next.js",
+      "TypeScript",
+      "Expo",
+      "PostgreSQL",
+      "MongoDB",
+    ],
+  },
+  {
+    startYear: "Sept 2025",
+    endYear: "Jan 2026",
+    position: "Software Engineer",
+    company: "Trilogy (Khoros)",
+    url: "https://www.khoros.com/",
+    responsibilities:
+      "Led AWS infrastructure cost optimization for Khoros' enterprise SaaS products (Care, Communities, Spredfast). Spearheaded ElastiCache consolidation migrating 90 Redis clusters to shared Valkey 8.0 architecture, targeting >$146K annual savings. Reduced CloudWatch API costs by ~$129K/year through Datadog integration consolidation. Analyzed CloudFront traffic patterns for high-volume communities (100M+ daily requests) to identify cache optimization opportunities.",
+    technologies: [
+      "AWS",
+      "Python",
+      "ElastiCache",
+      "Datadog",
+      "CloudFront",
+      "Athena",
+    ],
+  },
+  {
+    startYear: "Jan 2025",
+    endYear: "Sept 2025",
     position: "Software Design Engineer",
     company: "Elite Software Automation",
     url: "https://elitesoftwareautomation.com/",
     responsibilities:
-      "Designing and implementing complex, end-to-end digital systems that streamline and scale operational workflows across many industries such as education, auto finance, marketing, and nonprofit organizations",
+      "Designed and implemented complex, end-to-end digital systems that streamlined and scaled operational workflows across industries including education, auto finance, marketing, and nonprofit organizations.",
     technologies: ["React", "Node.js", "System Design"],
   },
   {
@@ -46,33 +84,52 @@ export const experiences = [
     position: "Software Engineer",
     company: "Uganda Revenue Authority",
     url: "https://ura.go.ug/en/",
-    // previousRoles: ["Intern"],
     responsibilities:
-      "Design and build dynamic full-stack solutions tailored to supercharge the business operations of the Uganda Revenue Authority! In tandem with a power-team of developers, consistently delivered top-notch, unyielding production code. Always at the forefront of collaborative brainstorming, cutting-edge design, and impeccable product output",
+      "Designed and built dynamic full-stack solutions tailored to supercharge the business operations of the Uganda Revenue Authority. In tandem with a power-team of developers, consistently delivered top-notch, unyielding production code. Always at the forefront of collaborative brainstorming, cutting-edge design, and impeccable product output.",
     technologies: ["React", "TypeScript", "NextJS", "Java", "Quarkus"],
-  },
-  {
-    startYear: "June 2020",
-    endYear: "Present",
-    position: "Full stack developer (Part-Time)",
-    company: "Hitaji Technologies",
-    url: "https://hitajitech.com",
-    previousRoles: ["Intern"],
-    responsibilities:
-      "Designing and developing full stack solutions for various clients, including a crucial material schedule calculator app for the Uganda Revenue Authority VAT unit. Spearheaded the building of multiple solutions for various clients. Focused on delivering high-quality, robust production code, and contributing to collaborative problem-solving, sophisticated design, and quality product.",
-    technologies: [
-      "React",
-      "NextJS",
-      "WordPress",
-      "JavaScript",
-      "TypeScript",
-      "Sanity CMS",
-      "Node.js",
-    ],
   },
 ];
 
 export const projects = [
+  {
+    title: "Hitaji 360",
+    slug: "hitaji-360",
+    description:
+      "A multi-tenant SaaS platform providing shared business foundations — payments, chat, notifications, AI assistant, and identity — with pluggable vertical products. Currently powering Edu360, a comprehensive school management system with web and mobile apps for administrators, teachers, and parents.",
+    url: "https://hitaji-360-marketing.vercel.app/",
+    imageSrc: "/hitaji-360.png",
+    technologies: [
+      "React",
+      "React Native",
+      "NestJS",
+      ".NET",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "MongoDB",
+      "Expo",
+    ],
+    isNDA: false,
+    clientProblem:
+      "Organizations — especially schools — juggle disconnected tools for payments, communication, scheduling, and operations. Each tool has its own login, data silo, and billing. Scaling across industries means rebuilding shared capabilities from scratch every time.",
+    solution:
+      "I architected Hitaji 360 as a platform with shared foundations (identity, tenanting, payments, chat, notifications, AI, file storage) that any vertical product can plug into. The first vertical, Edu360, delivers end-to-end school management — from student enrollment and attendance to invoicing, report cards, and parent communication — across web and mobile.",
+    keyFeatures: [
+      "Multi-tenant architecture with per-tenant DB isolation and encrypted credentials",
+      "Payments 360: invoicing, collections, refunds, mobile money, parent portal, payout onboarding, scholarships",
+      "Chat 360: user-to-user messaging, AI assistant with text-to-SQL, file storage",
+      "Notifications 360: in-app inbox, email templates, SMS (Twilio), push notifications (FCM/APNS)",
+      "OAuth2/OIDC identity service with 66+ permission scopes and RBAC",
+      "Edu360 web app with 50+ modules across academics, people, finance, and operations",
+      "Staff and parent mobile apps (Expo/React Native) with offline-first attendance and push notifications",
+      "ERP-like modules: accounting, CRM, HR, tasks, inventory, and personal finance",
+    ],
+    impact:
+      "Platform serves multiple schools with real-time payments, automated notifications, and AI-assisted data queries — reducing administrative overhead and enabling teachers in low-connectivity environments to work offline.",
+    duration: "Ongoing",
+    teamSize: "3 developers",
+    role: "Lead Engineer & Platform Architect",
+  },
   {
     title: "Hitaji Save",
     slug: "hitaji-save",
@@ -158,6 +215,36 @@ export const projects = [
 ];
 
 export const projectsTableData = [
+  {
+    year: "2026",
+    project: "Hitaji 360",
+    slug: "hitaji-360",
+    madeAt: "Hitaji Technologies",
+    builtWith: [
+      "React",
+      "React Native",
+      "NestJS",
+      ".NET",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "MongoDB",
+      "Expo",
+    ],
+    links: [
+      {
+        url: "https://hitaji-360-marketing.vercel.app/",
+        label: "hitaji360.com",
+      },
+    ],
+    isNDA: false,
+    description:
+      "A multi-tenant SaaS platform with shared foundations (payments, chat, notifications, AI, identity) and pluggable vertical products. Currently powering Edu360 for school management across web and mobile.",
+    clientProblem:
+      "Organizations juggle disconnected tools for payments, communication, scheduling, and operations, each with its own silo. Scaling across industries means rebuilding shared capabilities from scratch.",
+    solution:
+      "Architected a platform with shared foundations that any vertical product can plug into. The first vertical, Edu360, delivers end-to-end school management across web and mobile apps for administrators, teachers, and parents.",
+  },
   {
     year: "2025",
     project: "EduTrack360",

@@ -20,35 +20,35 @@ const Hero = () => {
         <div>
           <p className="mb-4">
             I&apos;m a full-stack developer, optimist, and lifelong learner who
-            began my tech journey in 2020. I&apos;ve had the privilege of
-            contributing to impactful organizations like{" "}
-            <Link
-              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
-              href="https://elitesoftwareautomation.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Elite Software Automation
-            </Link>{" "}
-            and{" "}
-            <span className="font-medium text-secondary">
+            began my tech journey in 2020. I currently serve as Lead Engineer
+            at{" "}
+            <span className="font-semibold text-secondary">
               Hitaji Technologies
             </span>
-            . My work involves designing and developing full-stack solutions for
-            various clients, including a crucial material schedule calculator
-            app for the{" "}
+            , where I&apos;m building{" "}
             <Link
-              className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
-              href="https://ura.go.ug/en/"
+              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
+              href="https://hitaji-360-marketing.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Uganda Revenue Authority
+              Hitaji 360
             </Link>
-            .
+            {" "}&mdash; a multi-tenant SaaS platform with shared foundations
+            for payments, chat, notifications, and AI, powering vertical
+            products like Edu360 for school management.
           </p>
           <p className="mb-4">
-            I have also had the opportunity to work with{" "}
+            I&apos;ve had the privilege of contributing to organizations like{" "}
+            <Link
+              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
+              href="https://www.khoros.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Trilogy (Khoros)
+            </Link>
+            ,{" "}
             <Link
               className="font-semibold text-secondary hover:text-black focus-visible:text-black"
               href="https://www.turing.com/"
@@ -57,12 +57,17 @@ const Hero = () => {
             >
               Turing (Google - Deepmind)
             </Link>
-            , where I tested and evaluated Gemini&apos;s coding capabilities on
-            open-source repositories to identify implementation gaps. This
-            experience allowed me to leverage insights to create RLHF datasets
-            for advanced AI model training, deepening my expertise in complex
-            coding structures and contributing to the refinement of
-            state-of-the-art AI coding models.
+            , and the{" "}
+            <Link
+              className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
+              href="https://ura.go.ug/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Uganda Revenue Authority
+            </Link>
+            , spanning enterprise SaaS, AI model training, and government
+            digital transformation.
           </p>
           <p className="mb-4">
             When I&apos;m not coding or innovating, I&apos;m often found in the
@@ -94,7 +99,7 @@ const Hero = () => {
             <Link
               className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Résumé"
-              href="https://1d1d80ogr0.ufs.sh/f/BhhFqnIpzN8i2cc3rT0HzmRc21DSPwhl6ve4yuAZUNVIEqK3"
+              href="https://1d1d80ogr0.ufs.sh/f/BhhFqnIpzN8icrANknE7faNI0SoFRUO8QVePKED2CXBYci7k"
               target="_blank"
               rel="noopener noreferrer"
             >
