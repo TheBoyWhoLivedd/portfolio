@@ -99,7 +99,7 @@ const Hero = () => {
             <Link
               className="inline-flex items-center font-medium leading-tight text-secondary font-semibold text-secondary group"
               aria-label="View Full Résumé"
-              href="https://1d1d80ogr0.ufs.sh/f/BhhFqnIpzN8icrANknE7faNI0SoFRUO8QVePKED2CXBYci7k"
+              href="https://1d1d80ogr0.ufs.sh/f/BhhFqnIpzN8iLNCGd10DqXwsTAlgB9WkjZPrad4bLH823cJY"
               target="_blank"
               rel="noopener noreferrer"
             >

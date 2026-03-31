@@ -160,61 +160,171 @@ export const projects = [
     role: "Full-Stack Developer & AI Integration Specialist",
   },
   {
-    title: "AutoFinance360",
-    slug: "autofinance360",
+    title: "Fundify",
+    slug: "fundify",
     description:
-      "Engineered an end-to-end dealership operations platform that digitized and unified processes across sales, underwriting, inventory management, and collections for a multi-entity organization.",
-    url: "",
-    imageSrc: "",
-    technologies: ["React", "Node.js", "Workflow Automation", "System Design"],
-    isNDA: true,
+      "A SaaS platform for investment clubs and savings groups to track contributions, manage loans, distribute profits, and grow investments together. Features a comprehensive dashboard with real-time club overviews, asset tracking, and member management.",
+    url: "https://usefundify.com",
+    imageSrc: "/fundify.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+    ],
+    isNDA: false,
     clientProblem:
-      "A multi-entity auto finance organization was struggling with fragmented operations across sales, underwriting, inventory management, and collections. Manual processes led to inefficiencies, data silos, and poor customer experience.",
+      "Investment clubs and savings groups struggle with manual tracking of contributions, loans, and profit distributions. Lack of transparency and real-time visibility into club finances leads to disputes and inefficiencies.",
     solution:
-      "I designed and engineered a comprehensive dealership operations platform that unified all business processes into a single, cohesive system. The platform automated workflow transitions, integrated all stakeholders, and provided real-time visibility across the entire operation.",
+      "Built a comprehensive platform that digitizes all investment club operations — from contribution tracking and loan management to profit distribution and asset monitoring — giving every member real-time visibility into their club's finances.",
     keyFeatures: [
-      "Unified dashboard for sales, finance, and operations teams",
-      "Automated underwriting workflow with decision trees",
-      "Real-time inventory management and tracking",
-      "Integrated collections and payment processing",
-      "Multi-entity support with role-based access control",
-      "Advanced reporting and analytics suite",
+      "Real-time club dashboard with total capital, outstanding loans, and pending approvals",
+      "Asset tracking across multiple investment types (cash, bonds, treasury bills, fixed deposits)",
+      "Contribution management with automated tracking and reminders",
+      "Loan management with application, approval, and repayment workflows",
+      "Member management with role-based access",
+      "Fine tracking and enforcement for missed obligations",
+      "Mobile-responsive design for on-the-go access",
     ],
     impact:
-      "Reduced processing time by 70%, improved customer satisfaction, and enabled the organization to scale operations across multiple entities seamlessly.",
-    duration: "6 months",
-    teamSize: "3 developers",
-    role: "Lead Full-Stack Developer & System Architect",
+      "Enables investment clubs to manage their entire financial operations digitally, improving transparency and reducing administrative overhead for club managers.",
+    duration: "Ongoing",
+    teamSize: "2 developers",
+    role: "Full-Stack Developer",
   },
   {
-    title: "FaithOps Member Engagement System",
-    slug: "faith-ops",
+    title: "Hitaji Bot — Autonomous Coding Agent",
+    slug: "hitaji-bot",
     description:
-      "Architected a suite of modular digital systems to drive engagement and retention for a large, multi-entity organization spanning ministry, education, retail, and events.",
+      "An autonomous AI coding agent that receives tasks via Slack, discovers relevant code across 10+ microservices, implements changes, validates them by orchestrating local service deployments, and creates pull requests — all without human guidance.",
     url: "",
-    imageSrc: "", // No image provided, will use placeholder
-    technologies: ["System Design", "Workflow Automation", "React", "Node.js"],
-    isNDA: true,
+    imageSrc: "",
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "LLM Tool-Calling",
+      "Git",
+      "Docker",
+      "Slack API",
+    ],
+    isNDA: false,
     clientProblem:
-      "A large, multi-entity organization was facing challenges in driving engagement and retaining members across its diverse operations including ministry, education, retail, and events.",
+      "Implementing changes across a multi-service architecture requires developers to understand service boundaries, manage dependencies, and coordinate deployments — a time-consuming process that slows down development velocity.",
     solution:
-      "I architected a comprehensive suite of modular digital systems to solve this. This included a member lifecycle management system, over 15 program-specific workflows, automated feedback loops for accountability, and a donation and reconciliation workflow with OCR for financial integrity.",
+      "Built an autonomous AI agent with a streaming LLM tool-calling loop (50+ iterations per task) and 20+ specialized tools including code search, file editing, git operations, and subagent spawning for parallel codebase exploration.",
     keyFeatures: [
-      "Comprehensive member lifecycle management",
-      "15+ program-specific automated workflows",
-      "Automated feedback and SOP adherence monitoring",
-      "Donation and reconciliation workflow with OCR",
-      "Centralized system for a multi-entity organization",
+      "Slack-driven task intake with autonomous code discovery across 10+ microservices",
+      "Streaming LLM tool-calling loop with 20+ specialized tools (ripgrep, file editing, git ops)",
+      "Intelligent service orchestration with dependency-ordered startup and health checks",
+      "Workspace pooling with pre-warming (5 slots, max 8) and per-repo mutexes",
+      "Publication quality gate with diff analysis and two-phase validation pipeline",
+      "Subagent spawning for parallel codebase exploration",
     ],
     impact:
-      "Drove engagement and retention, improved operational accountability, and streamlined financial reconciliation processes across the organization.",
+      "Reduced multi-service development cycle time significantly, with workspace pooling cutting task startup latency by 40–60%.",
+    duration: "3 months",
+    teamSize: "1 developer",
+    role: "AI Engineer & Architect",
+  },
+  {
+    title: "BBS Harness — AI Structural Drawing Analyzer",
+    slug: "bbs-harness",
+    description:
+      "A multi-stage LangGraph agentic pipeline that extracts bar bending schedules from structural engineering PDFs, using durable Postgres-backed checkpointing for resumable, crash-resilient orchestration with human-in-the-loop review gates.",
+    url: "",
+    imageSrc: "",
+    technologies: [
+      "Python",
+      "LangGraph",
+      "Computer Vision",
+      "PostgreSQL",
+      "LLM Agents",
+    ],
+    isNDA: false,
+    clientProblem:
+      "Structural engineers manually extract bar bending schedule data from complex PDF drawings — a tedious, error-prone process that creates bottlenecks in construction planning.",
+    solution:
+      "Architected a multi-stage agentic pipeline with human-in-the-loop review gates, multi-modal progressive inspection, and intelligent token budget management to automate accurate data extraction from structural PDFs.",
+    keyFeatures: [
+      "Multi-stage LangGraph pipeline with Postgres-backed durable checkpointing",
+      "Human-in-the-loop (HITL) review gates with typed interrupt boundaries",
+      "Multi-modal progressive inspection: low-res overview → region detection → detail crop extraction",
+      "Intelligent token budget management with payload estimation and message pruning",
+      "Evidence linking for extracted values back to source regions",
+    ],
+    impact:
+      "Automates the extraction of bar bending schedules from structural drawings, reducing manual data entry time from hours to minutes while maintaining engineer oversight through review gates.",
     duration: "Ongoing",
-    teamSize: "4 developers",
-    role: "System Architect",
+    teamSize: "1 developer",
+    role: "AI Engineer",
   },
 ];
 
 export const projectsTableData = [
+  {
+    year: "2026",
+    project: "Fundify",
+    slug: "fundify",
+    madeAt: "Hitaji Technologies",
+    builtWith: ["Next.js", "React", "Node.js", "TypeScript", "PostgreSQL"],
+    links: [
+      {
+        url: "https://usefundify.com",
+        label: "usefundify.com",
+      },
+    ],
+    isNDA: false,
+    description:
+      "A SaaS platform for investment clubs and savings groups to track contributions, manage loans, distribute profits, and grow investments together.",
+    clientProblem:
+      "Investment clubs and savings groups struggle with manual tracking of contributions, loans, and profit distributions, leading to disputes and inefficiencies.",
+    solution:
+      "Built a comprehensive platform that digitizes all investment club operations — from contribution tracking and loan management to profit distribution and asset monitoring.",
+  },
+  {
+    year: "2026",
+    project: "Hitaji Bot — Autonomous Coding Agent",
+    slug: "hitaji-bot",
+    madeAt: "Hitaji Technologies",
+    builtWith: [
+      "TypeScript",
+      "Node.js",
+      "LLM Tool-Calling",
+      "Git",
+      "Docker",
+      "Slack API",
+    ],
+    links: [],
+    isNDA: false,
+    description:
+      "An autonomous AI coding agent that receives tasks via Slack, discovers relevant code across 10+ microservices, implements changes, validates them, and creates pull requests — all without human guidance.",
+    clientProblem:
+      "Implementing changes across a multi-service architecture requires understanding service boundaries, managing dependencies, and coordinating deployments — slowing development velocity.",
+    solution:
+      "Built an autonomous AI agent with a streaming LLM tool-calling loop and 20+ specialized tools for code search, file editing, git operations, and subagent spawning.",
+  },
+  {
+    year: "2026",
+    project: "BBS Harness — AI Structural Drawing Analyzer",
+    slug: "bbs-harness",
+    madeAt: "Hitaji Technologies",
+    builtWith: [
+      "Python",
+      "LangGraph",
+      "Computer Vision",
+      "PostgreSQL",
+      "LLM Agents",
+    ],
+    links: [],
+    isNDA: false,
+    description:
+      "A multi-stage LangGraph agentic pipeline that extracts bar bending schedules from structural engineering PDFs with human-in-the-loop review gates and crash-resilient orchestration.",
+    clientProblem:
+      "Structural engineers manually extract bar bending schedule data from complex PDF drawings — a tedious, error-prone process that creates bottlenecks in construction planning.",
+    solution:
+      "Architected a multi-stage agentic pipeline with HITL review gates, multi-modal progressive inspection, and intelligent token budget management for automated data extraction.",
+  },
   {
     year: "2026",
     project: "Hitaji 360",
