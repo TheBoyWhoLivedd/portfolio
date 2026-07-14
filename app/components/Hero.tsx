@@ -19,45 +19,53 @@ const Hero = () => {
         </div>
         <div>
           <p className="mb-4">
-            I&apos;m a full-stack developer, optimist, and lifelong learner who
-            began my tech journey in 2020. I currently serve as Lead Engineer
-            at{" "}
+            I&apos;m a full-stack and applied AI engineer with six years of
+            experience shipping production SaaS, mobile, government, and
+            financial systems. I&apos;m the founding engineer at{" "}
             <span className="font-semibold text-secondary">
               Hitaji Technologies
             </span>
             , where I&apos;m building{" "}
             <Link
               className="font-semibold text-secondary hover:text-black focus-visible:text-black"
-              href="https://hitaji-360-marketing.vercel.app/"
+              href="https://hitajitechnologies.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Hitaji 360
             </Link>
-            {" "}&mdash; a multi-tenant SaaS platform with shared foundations
-            for payments, chat, notifications, and AI, powering vertical
-            products like Edu360 for school management.
+            , where I work across 11 production services and build authorized
+            AI agents, payment infrastructure, and products for schools,
+            SACCOs, legal teams, agriculture, and construction.
           </p>
           <p className="mb-4">
-            I&apos;ve had the privilege of contributing to organizations like{" "}
-            <Link
-              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
-              href="https://www.khoros.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Trilogy (Khoros)
-            </Link>
-            ,{" "}
+            Before that I spent six months at{" "}
             <Link
               className="font-semibold text-secondary hover:text-black focus-visible:text-black"
               href="https://www.turing.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Turing (Google - Deepmind)
-            </Link>
-            , and the{" "}
+              Turing
+            </Link>{" "}
+            on a Google DeepMind project, evaluating Gemini against real
+            open-source repositories and turning observed failures into 200+
+            training and evaluation tasks. That work shaped how I approach AI:
+            build the system, measure it against real work, and keep humans at
+            the decisions where mistakes matter.
+          </p>
+          <p className="mb-4">
+            I&apos;ve also cut{" "}
+            <Link
+              className="font-semibold text-secondary hover:text-black focus-visible:text-black"
+              href="https://www.khoros.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Khoros&apos;
+            </Link>{" "}
+            CloudWatch spend by approximately $129K a year, and spent two years
+            at the{" "}
             <Link
               className="font-medium text-secondary hover:text-black focus-visible:text-teal-300"
               href="https://ura.go.ug/en/"
@@ -65,16 +73,15 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               Uganda Revenue Authority
-            </Link>
-            , spanning enterprise SaaS, AI model training, and government
-            digital transformation.
+            </Link>{" "}
+            building the portal financial institutions use to file cross-border
+            account data under OECD tax-transparency rules. The common thread is
+            dependable software for workflows where correctness matters.
           </p>
           <p className="mb-4">
-            When I&apos;m not coding or innovating, I&apos;m often found in the
-            pool, trying to channel my inner Caeleb Dressel, or in the gym,
-            working to match his physique. Whether it&apos;s in my work or
-            personal life, I&apos;m driven by a desire to learn, grow, and
-            improve, every day.
+            I&apos;m based in Kampala and available for remote full-stack and
+            applied AI roles. When I&apos;m not building, I&apos;m usually in the
+            pool or somewhere with a book.
           </p>
         </div>
       </section>

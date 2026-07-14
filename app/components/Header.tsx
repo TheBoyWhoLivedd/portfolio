@@ -14,12 +14,11 @@ const Header = () => {
           <Link href="/">Ronnie Ayesigwa</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-secondary sm:text-xl">
-          Lead Engineer at Hitaji Technologies
+          Full-Stack &amp; Applied AI Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I&apos;m a fullstack developer, optimist, and life long learner. I
-          create web-based solutions and digital experiences that prioritize
-          accessibility and inclusivity.
+          I build production SaaS, mobile systems, and AI agents that are
+          authorized, observable, and measured against real work.
         </p>
         <nav className="hidden lg:block" aria-label="In-page Jump Links">
           <ul className="mt-16 w-max">

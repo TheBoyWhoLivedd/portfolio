@@ -178,9 +178,13 @@ export default function ProjectDetail({ params }: PageProps) {
                       d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                     />
                   </svg>
-                  <p className="text-blue-600 font-medium">Project Under NDA</p>
+                  <p className="text-blue-600 font-medium">
+                    {project.isNDA ? "Project Under NDA" : "Technical Case Study"}
+                  </p>
                   <p className="text-blue-500 text-sm">
-                    Visuals not available for confidential projects
+                    {project.isNDA
+                      ? "Visuals are unavailable for confidential projects"
+                      : "Architecture and implementation details below"}
                   </p>
                 </div>
               </div>
@@ -438,10 +442,10 @@ export default function ProjectDetail({ params }: PageProps) {
               Interested in working together?
             </h3>
             <a
-              href="mailto:ayesigwar@gmail.com"
+              href="mailto:ayesigwaronnie@gmail.com"
               className="inline-flex items-center px-6 py-3 bg-secondary text-white rounded-lg hover:bg-black transition-colors"
             >
-              Send me an email (ayesigwar@gmail.com)
+              Email me about a role or project
               <svg
                 className="w-4 h-4 ml-2"
                 fill="currentColor"

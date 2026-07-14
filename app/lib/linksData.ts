@@ -23,12 +23,12 @@ export const experiences = [
   {
     startYear: "June 2020",
     endYear: "Present",
-    position: "Lead Engineer",
+    position: "Founding Engineer",
     company: "Hitaji Technologies",
-    url: "https://hitaji-360-marketing.vercel.app/",
+    url: "https://hitajitechnologies.com/",
     previousRoles: ["Full Stack Developer (Part-Time)"],
     responsibilities:
-      "Leading the architecture and development of Hitaji 360, a multi-tenant SaaS platform providing shared foundations — payments, chat, notifications, AI assistant, and identity — with vertical products like Edu360 for school management. Building across 9 services spanning .NET, NestJS, Next.js, and React Native (Expo), serving both web and mobile clients.",
+      "Founding engineer for Hitaji 360, a production platform spanning 11 services across identity, payments, notifications, AI, and vertical products. Architected Hitaji Bot, whose generated changes have produced 60+ merged pull requests across 10+ microservices. Built a shared authorization registry for 97 LLM-callable capabilities and shipped URA EFRIS e-invoicing with RSA authentication and AES-encrypted fiscal submissions.",
     technologies: [
       "React",
       "React Native",
@@ -36,9 +36,10 @@ export const experiences = [
       ".NET",
       "Next.js",
       "TypeScript",
-      "Expo",
       "PostgreSQL",
-      "MongoDB",
+      "pgvector",
+      "LangSmith",
+      "Docker",
     ],
   },
   {
@@ -48,7 +49,7 @@ export const experiences = [
     company: "Trilogy (Khoros)",
     url: "https://www.khoros.com/",
     responsibilities:
-      "Led AWS infrastructure cost optimization for Khoros' enterprise SaaS products (Care, Communities, Spredfast). Spearheaded ElastiCache consolidation migrating 90 Redis clusters to shared Valkey 8.0 architecture, targeting >$146K annual savings. Reduced CloudWatch API costs by ~$129K/year through Datadog integration consolidation. Analyzed CloudFront traffic patterns for high-volume communities (100M+ daily requests) to identify cache optimization opportunities.",
+      "AWS cost engineering across Khoros' enterprise SaaS products. Cut CloudWatch GetMetricData spend by approximately $129K/year through Datadog integration consolidation and Python automation. Led an ElastiCache consolidation toward a $146K/year savings target, migrating 60 of 90 Redis clusters to shared Valkey infrastructure before handoff. Analyzed CloudFront traffic exceeding 100M daily requests with Athena and Parquet to identify cache and origin-bandwidth savings.",
     technologies: [
       "AWS",
       "Python",
@@ -65,18 +66,24 @@ export const experiences = [
     company: "Elite Software Automation",
     url: "https://elitesoftwareautomation.com/",
     responsibilities:
-      "Designed and implemented complex, end-to-end digital systems that streamlined and scaled operational workflows across industries including education, auto finance, marketing, and nonprofit organizations.",
-    technologies: ["React", "Node.js", "System Design"],
+      "Built operational systems for clients in auto finance, nonprofit, and education. AutoFinance360 unified sales, underwriting, inventory, and collections for a multi-entity dealership group; its pre-deal risk checks reduced early loan defaults by 18%. Also delivered GPS-backed inventory audit trails across 6+ sites and 15+ member and donation workflows with OCR-assisted reconciliation.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Workflow Automation",
+      "System Design",
+      "OCR",
+    ],
   },
   {
     startYear: "July 2024",
     endYear: "Dec 2024",
-    position: "Node/React Engineer",
-    company: "Turing (Google - Deepmind)",
+    position: "AI Training Engineer, Google DeepMind project",
+    company: "Turing",
     url: "https://www.turing.com/",
     responsibilities:
-      "Tested and evaluated Gemini's coding capabilities on open-source repositories to identify implementation gaps, leveraging insights to create RLHF datasets for advanced AI model training. Gained extensive expertise in complex coding structures, like parsers and linters, while contributing to the refinement and reliability of state-of-the-art AI coding models.",
-    technologies: ["Node.js", "React", "AI/ML"],
+      "Evaluated Gemini against real open-source parsers, linters, and build tools. Authored and reviewed 200+ tasks that converted observed model failures into evaluation and RLHF training data for code generation.",
+    technologies: ["Model Evaluation", "RLHF", "Node.js", "React", "Python"],
   },
   {
     startYear: "June 2022",
@@ -85,124 +92,31 @@ export const experiences = [
     company: "Uganda Revenue Authority",
     url: "https://ura.go.ug/en/",
     responsibilities:
-      "Designed and built dynamic full-stack solutions tailored to supercharge the business operations of the Uganda Revenue Authority. In tandem with a power-team of developers, consistently delivered top-notch, unyielding production code. Always at the forefront of collaborative brainstorming, cutting-edge design, and impeccable product output.",
-    technologies: ["React", "TypeScript", "NextJS", "Java", "Quarkus"],
+      "Built internal platforms for Uganda's national tax authority. Delivered the React and Java/Quarkus AEOI Portal used by 30+ financial institutions to submit CRS/FATCA account data. Replaced spreadsheet-based compliance work with automated case routing, penalty assessment, status tracking, and escalation workflows, alongside project, leave, and VAT tooling used across divisions.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Java",
+      "Quarkus",
+      "MongoDB",
+      "Docker",
+    ],
   },
 ];
 
 export const projects = [
   {
-    title: "Hitaji 360",
-    slug: "hitaji-360",
-    description:
-      "A multi-tenant SaaS platform providing shared business foundations — payments, chat, notifications, AI assistant, and identity — with pluggable vertical products. Currently powering Edu360, a comprehensive school management system with web and mobile apps for administrators, teachers, and parents.",
-    url: "https://hitaji-360-marketing.vercel.app/",
-    imageSrc: "/hitaji-360.png",
-    technologies: [
-      "React",
-      "React Native",
-      "NestJS",
-      ".NET",
-      "Next.js",
-      "TypeScript",
-      "PostgreSQL",
-      "MongoDB",
-      "Expo",
-    ],
-    isNDA: false,
-    clientProblem:
-      "Organizations — especially schools — juggle disconnected tools for payments, communication, scheduling, and operations. Each tool has its own login, data silo, and billing. Scaling across industries means rebuilding shared capabilities from scratch every time.",
-    solution:
-      "I architected Hitaji 360 as a platform with shared foundations (identity, tenanting, payments, chat, notifications, AI, file storage) that any vertical product can plug into. The first vertical, Edu360, delivers end-to-end school management — from student enrollment and attendance to invoicing, report cards, and parent communication — across web and mobile.",
-    keyFeatures: [
-      "Multi-tenant architecture with per-tenant DB isolation and encrypted credentials",
-      "Payments 360: invoicing, collections, refunds, mobile money, parent portal, payout onboarding, scholarships",
-      "Chat 360: user-to-user messaging, AI assistant with text-to-SQL, file storage",
-      "Notifications 360: in-app inbox, email templates, SMS (Twilio), push notifications (FCM/APNS)",
-      "OAuth2/OIDC identity service with 66+ permission scopes and RBAC",
-      "Edu360 web app with 50+ modules across academics, people, finance, and operations",
-      "Staff and parent mobile apps (Expo/React Native) with offline-first attendance and push notifications",
-      "ERP-like modules: accounting, CRM, HR, tasks, inventory, and personal finance",
-    ],
-    impact:
-      "Platform serves multiple schools with real-time payments, automated notifications, and AI-assisted data queries — reducing administrative overhead and enabling teachers in low-connectivity environments to work offline.",
-    duration: "Ongoing",
-    teamSize: "3 developers",
-    role: "Lead Engineer & Platform Architect",
-  },
-  {
-    title: "Hitaji Save",
-    slug: "hitaji-save",
-    description:
-      "A smart expense tracking app featuring an AI assistant that helps manage your finances through natural conversation. Users can speak to the AI about their transactions or upload receipt images, and the assistant automatically extracts and logs the transaction details. The AI also provides personalized financial insights and budgeting recommendations based on spending patterns.",
-    url: "https://save.hitajitechnologies.com",
-    imageSrc: "/hitaji-save-dark.png",
-    technologies: ["React", "Node.js", "Docker", "AI/ML", "TypeScript"],
-    isNDA: false,
-    clientProblem:
-      "Personal finance management is often tedious and time-consuming. People struggle to consistently track expenses, categorize transactions, and gain meaningful insights from their spending patterns.",
-    solution:
-      "I developed an AI-powered expense tracking app that makes financial management conversational and intuitive. Users can simply speak to the AI about their expenses or upload receipt photos, and the system handles all the categorization and tracking automatically.",
-    keyFeatures: [
-      "Natural language expense logging via voice or text",
-      "AI-powered receipt scanning and data extraction",
-      "Intelligent expense categorization and tagging",
-      "Personalized financial insights and recommendations",
-      "Budget tracking with smart alerts",
-      "Export capabilities for tax and accounting purposes",
-      "Multi-currency support",
-      "Data visualization and spending trends",
-    ],
-    impact:
-      "Users report 80% reduction in time spent on expense tracking and improved financial awareness through AI-generated insights.",
-    duration: "4 months",
-    teamSize: "2 developers",
-    role: "Full-Stack Developer & AI Integration Specialist",
-  },
-  {
-    title: "Fundify",
-    slug: "fundify",
-    description:
-      "A SaaS platform for investment clubs and savings groups to track contributions, manage loans, distribute profits, and grow investments together. Features a comprehensive dashboard with real-time club overviews, asset tracking, and member management.",
-    url: "https://usefundify.com",
-    imageSrc: "/fundify.png",
-    technologies: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "PostgreSQL",
-    ],
-    isNDA: false,
-    clientProblem:
-      "Investment clubs and savings groups struggle with manual tracking of contributions, loans, and profit distributions. Lack of transparency and real-time visibility into club finances leads to disputes and inefficiencies.",
-    solution:
-      "Built a comprehensive platform that digitizes all investment club operations — from contribution tracking and loan management to profit distribution and asset monitoring — giving every member real-time visibility into their club's finances.",
-    keyFeatures: [
-      "Real-time club dashboard with total capital, outstanding loans, and pending approvals",
-      "Asset tracking across multiple investment types (cash, bonds, treasury bills, fixed deposits)",
-      "Contribution management with automated tracking and reminders",
-      "Loan management with application, approval, and repayment workflows",
-      "Member management with role-based access",
-      "Fine tracking and enforcement for missed obligations",
-      "Mobile-responsive design for on-the-go access",
-    ],
-    impact:
-      "Enables investment clubs to manage their entire financial operations digitally, improving transparency and reducing administrative overhead for club managers.",
-    duration: "Ongoing",
-    teamSize: "2 developers",
-    role: "Full-Stack Developer",
-  },
-  {
     title: "Hitaji Bot — Autonomous Coding Agent",
     slug: "hitaji-bot",
     description:
-      "An autonomous AI coding agent that receives tasks via Slack, discovers relevant code across 10+ microservices, implements changes, validates them by orchestrating local service deployments, and creates pull requests — all without human guidance.",
+      "An autonomous coding agent that turns Slack requests into validated pull requests across 10+ microservices; 60+ generated pull requests have been merged.",
     url: "",
     imageSrc: "",
     technologies: [
       "TypeScript",
-      "Node.js",
+      "Bun",
+      "Claude API",
       "LLM Tool-Calling",
       "Git",
       "Docker",
@@ -210,20 +124,56 @@ export const projects = [
     ],
     isNDA: false,
     clientProblem:
-      "Implementing changes across a multi-service architecture requires developers to understand service boundaries, manage dependencies, and coordinate deployments — a time-consuming process that slows down development velocity.",
+      "A change that spans a multi-service architecture is mostly overhead: find the right services, understand their boundaries, wire up local environments in the right order, run the builds, then open the PRs. The thinking is a small fraction of the wall-clock time.",
     solution:
-      "Built an autonomous AI agent with a streaming LLM tool-calling loop (50+ iterations per task) and 20+ specialized tools including code search, file editing, git operations, and subagent spawning for parallel codebase exploration.",
+      "I built a streaming agent with 20+ tools for code search, editing, git operations, parallel exploration, and service orchestration. It configures and starts dependent services, then runs builds, tests, and health checks before opening a pull request.",
     keyFeatures: [
       "Slack-driven task intake with autonomous code discovery across 10+ microservices",
-      "Streaming LLM tool-calling loop with 20+ specialized tools (ripgrep, file editing, git ops)",
-      "Intelligent service orchestration with dependency-ordered startup and health checks",
-      "Workspace pooling with pre-warming (5 slots, max 8) and per-repo mutexes",
-      "Publication quality gate with diff analysis and two-phase validation pipeline",
+      "Streaming tool-calling loop with 20+ tools (ripgrep search, file editing, git operations)",
+      "Service orchestration: dynamic env configuration (dotenv + JSON), dependency-ordered startup, health checks",
+      "Workspace pooling with pre-warming (5 slots, max 8) and per-repo mutexes to prevent git contention",
+      "Two-phase build/test validation and a diff-analysis quality gate before any PR is published",
       "Subagent spawning for parallel codebase exploration",
+      "Dual-provider LLM abstraction (Anthropic/OpenAI)",
     ],
     impact:
-      "Reduced multi-service development cycle time significantly, with workspace pooling cutting task startup latency by 40–60%.",
+      "60+ merged pull requests to date. Workspace pooling cut task startup latency by 40–60%.",
     duration: "3 months",
+    teamSize: "1 developer",
+    role: "AI Engineer & Architect",
+  },
+  {
+    title: "Hitaji Brain — Agent Platform & Sandboxed Code Runtime",
+    slug: "hitaji-brain",
+    description:
+      "A production agent platform with 97 authorized business capabilities and a sandbox where models can analyze live data without directly mutating it.",
+    url: "",
+    imageSrc: "",
+    technologies: [
+      "NestJS",
+      "TypeScript",
+      "QuickJS (WASM)",
+      "PostgreSQL",
+      "Zod",
+      "MCP",
+      "LangSmith",
+    ],
+    isNDA: false,
+    clientProblem:
+      "Giving an LLM real tools against a real ERP is where most agent projects quietly break. Ninety-odd tools means ninety-odd places to forget a permission check. And the moment you let the model run code so it can read across several endpoints at once, you have handed it the ability to write too.",
+    solution:
+      "I unified in-app and external-agent tools behind one capability registry and authorization boundary. For multi-step analysis, LLM-authored TypeScript runs in a QuickJS/WASM isolate with per-user read-only bindings, budgets, and deadlines. Writes are structurally unavailable inside the sandbox; proposed actions return to the user for confirmation.",
+    keyFeatures: [
+      "97 LLM-callable capabilities across ERP, HR, and task domains behind a single authorization path — agents inherit exactly the role checks the REST API enforces",
+      "Code mode: LLM-authored TypeScript executes in a QuickJS WASM isolate over read-only bindings, with a host-side read budget and wall-clock deadline",
+      "Writes are structurally impossible from inside the sandbox — the model returns a proposed action, and the backend turns it into a human confirmation card",
+      "Replaced the async runtime after reproducing a WASM reference-count defect in multi-read workloads",
+      "Pure WASM — no native addon, no Docker build tooling, runs the same in dev and prod",
+      "Retrieval over the product corpus with pgvector; LangSmith tracing end to end",
+    ],
+    impact:
+      "Live in production. Replacing the failing async runtime made multi-read code execution reliable while preserving a portable, pure-WASM deployment.",
+    duration: "Ongoing",
     teamSize: "1 developer",
     role: "AI Engineer & Architect",
   },
@@ -231,37 +181,96 @@ export const projects = [
     title: "BBS Harness — AI Structural Drawing Analyzer",
     slug: "bbs-harness",
     description:
-      "A multi-stage LangGraph agentic pipeline that extracts bar bending schedules from structural engineering PDFs, using durable Postgres-backed checkpointing for resumable, crash-resilient orchestration with human-in-the-loop review gates.",
+      "An auditable AI workflow that extracts bar-bending schedules from structural drawings while preserving source evidence and engineer review at the highest-risk stages.",
     url: "",
     imageSrc: "",
     technologies: [
-      "Python",
       "LangGraph",
+      "TypeScript",
+      "Python",
       "Computer Vision",
       "PostgreSQL",
-      "LLM Agents",
+      "LangSmith",
     ],
     isNDA: false,
     clientProblem:
-      "Structural engineers manually extract bar bending schedule data from complex PDF drawings — a tedious, error-prone process that creates bottlenecks in construction planning.",
+      "Extracting a bar bending schedule from a structural drawing set is a full day of manual counting, and the output feeds straight into procurement and pouring. An error is expensive and effectively permanent. A naive OCR pass does not work: the values only make sense in the context of the region of the drawing they sit in.",
     solution:
-      "Architected a multi-stage agentic pipeline with human-in-the-loop review gates, multi-modal progressive inspection, and intelligent token budget management to automate accurate data extraction from structural PDFs.",
+      "I built a multi-stage pipeline that starts with page overviews, detects regions with computer vision, then inspects detail and context crops. Every extracted value links back to its source, while typed review gates let engineers correct decomposition and classification without restarting a run.",
     keyFeatures: [
-      "Multi-stage LangGraph pipeline with Postgres-backed durable checkpointing",
-      "Human-in-the-loop (HITL) review gates with typed interrupt boundaries",
-      "Multi-modal progressive inspection: low-res overview → region detection → detail crop extraction",
-      "Intelligent token budget management with payload estimation and message pruning",
-      "Evidence linking for extracted values back to source regions",
+      "Multi-modal progressive inspection: low-res overview → CV region detection → detail + context crop extraction",
+      "Evidence linking: every extracted value traces back to its source page and region",
+      "Human-in-the-loop review gates at decomposition and classification, as typed interrupt boundaries — approve or edit without restarting the run",
+      "Durable Postgres-backed checkpointing for resumable, crash-tolerant orchestration",
+      "Token budget management with payload estimation and message pruning for large multi-page documents",
+      "Typed event contract (40+ event types) over SSE for live progress, with a full audit trail in Postgres",
     ],
     impact:
-      "Automates the extraction of bar bending schedules from structural drawings, reducing manual data entry time from hours to minutes while maintaining engineer oversight through review gates.",
+      "In an internal evaluation across 40 drawing sets, reduced an approximately eight-hour workflow to under 30 minutes at 94% field-level accuracy while preserving engineer oversight.",
     duration: "Ongoing",
     teamSize: "1 developer",
     role: "AI Engineer",
   },
+  {
+    title: "Fundify — Investment Club Operating System",
+    slug: "fundify",
+    description:
+      "An investment-club operating system for contributions, loans, fines, payments, and profit distribution, with configurable rules and complete audit trails.",
+    url: "https://usefundify.com",
+    imageSrc: "/fundify.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Stripe",
+      "Vercel AI SDK",
+    ],
+    isNDA: false,
+    clientProblem:
+      "Investment clubs run on spreadsheets and trust. Contributions, loan interest, fines, and profit splits are all computed by hand, and no two clubs use the same rules. When the numbers are questioned — and they always are — nobody can reconstruct how they were reached.",
+    solution:
+      "I built configurable contribution, compounding, interest, payment-waterfall, and time-weighted distribution rules so each club can encode its constitution. Multi-step approvals and immutable audit context make every movement of money reconstructable.",
+    keyFeatures: [
+      "Financial rules engine: three contribution modes, fine compounding, simple/reducing-balance/compound interest, time-weighted profit distribution",
+      "Payment waterfall allocation (fines → interest → principal → savings)",
+      "Multi-step approval workflows for payments, loans, and distributions, with proof-of-payment attachments via S3 pre-signed URLs",
+      "Soft-delete audit tracking — every change is reconstructable",
+      "AI accountant assistant over typed tool contracts: read-only financial insight (cash position, member statements, audit events), scoped to club-level permissions",
+      "Three-tier SaaS monetization (Stripe) with feature gating enforced at both the UI and server-action boundary",
+    ],
+    impact:
+      "Clubs run their entire financial operation on it — contributions through profit distribution — with every figure traceable back to the rule and the approval that produced it. 36+ test files cover the money paths.",
+    duration: "Ongoing",
+    teamSize: "2 developers",
+    role: "Full-Stack Developer",
+  },
 ];
 
 export const projectsTableData = [
+  {
+    year: "2026",
+    project: "Hitaji Brain — Agent Platform & Sandboxed Code Runtime",
+    slug: "hitaji-brain",
+    madeAt: "Hitaji Technologies",
+    builtWith: [
+      "NestJS",
+      "TypeScript",
+      "QuickJS (WASM)",
+      "PostgreSQL",
+      "MCP",
+      "LangSmith",
+    ],
+    links: [],
+    isNDA: false,
+    description:
+      "The agent layer inside Hitaji 360: 97 LLM-callable capabilities behind a single authorization path, plus a sandbox where the model writes and runs its own TypeScript against live business data without being able to write to it.",
+    clientProblem:
+      "Ninety-odd agent tools means ninety-odd places to forget a permission check. And letting the model run code so it can read across endpoints hands it the ability to write, too.",
+    solution:
+      "One capability registry and one authorize() call serving both the in-app chat and external agents. Code mode runs LLM-authored TypeScript in a QuickJS WASM isolate over read-only bindings — the model can loop over reads but can only propose a write, which returns as a human confirmation card.",
+  },
   {
     year: "2026",
     project: "Fundify",
