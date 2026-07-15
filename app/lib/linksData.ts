@@ -167,7 +167,7 @@ export const projects = [
       "97 LLM-callable capabilities across ERP, HR, and task domains behind a single authorization path — agents inherit exactly the role checks the REST API enforces",
       "Code mode: LLM-authored TypeScript executes in a QuickJS WASM isolate over read-only bindings, with a host-side read budget and wall-clock deadline",
       "Writes are structurally impossible from inside the sandbox — the model returns a proposed action, and the backend turns it into a human confirmation card",
-      "Replaced the async runtime after reproducing a WASM reference-count defect in multi-read workloads",
+      "Replaced the sandbox's async runtime after isolating a WASM corruption defect in multi-read workloads, then proposed fixes upstream (see Open-Source Contributions)",
       "Pure WASM — no native addon, no Docker build tooling, runs the same in dev and prod",
       "Retrieval over the product corpus with pgvector; LangSmith tracing end to end",
     ],
@@ -176,6 +176,51 @@ export const projects = [
     duration: "Ongoing",
     teamSize: "1 developer",
     role: "AI Engineer & Architect",
+  },
+  {
+    title: "Open-Source Engineering — QuickJS Runtime Reliability",
+    slug: "open-source",
+    description:
+      "Diagnosed a WASM runtime corruption failure from a production agent sandbox, published a minimal reproduction, and authored repair PRs for quickjs-emscripten and TanStack AI.",
+    url: "",
+    links: [
+      {
+        url: "https://github.com/justjake/quickjs-emscripten/pull/265",
+        label: "quickjs-emscripten PR #265",
+      },
+      {
+        url: "https://github.com/TanStack/ai/pull/946",
+        label: "TanStack AI PR #946",
+      },
+      {
+        url: "https://github.com/TheBoyWhoLivedd/quickjs-emscripten-asyncify-multi-await-repro",
+        label: "Reproduction harness",
+      },
+    ],
+    imageSrc: "",
+    technologies: [
+      "QuickJS (WASM)",
+      "Emscripten",
+      "TypeScript",
+      "Asyncify",
+      "Open Source",
+    ],
+    isNDA: false,
+    clientProblem:
+      "The sandbox passed single-call tests but corrupted its reused QuickJS context after multiple sequential awaited host calls. The failure surfaced as a fatal WASM memory error, making it difficult to catch, isolate, or recover from in application code.",
+    solution:
+      "I reduced the failure to a standalone harness and traced one cause to generated release bindings in quickjs-emscripten: an Asyncify-capable cwrap export omitted `{ async: true }`. I then authored two open repair PRs: one fixes the upstream binding and pending-job path; the other replaces TanStack AI's affected Asyncify bridge with synchronous QuickJS contexts and native promises.",
+    keyFeatures: [
+      "quickjs-emscripten PR #265: adds the missing async cwrap metadata, an awaitable pending-job driver, and regression coverage for sequential host awaits and context reuse",
+      "TanStack AI PR #946: replaces Asyncify tool callbacks with native QuickJS promises and covers sequential calls, concurrent calls, context reuse, timeout handling, and safe disposal",
+      "Published a self-contained reproduction harness that isolates the failure boundary and verifies the repair paths",
+      "Linked the application failure to quickjs-emscripten issue #258 and documented a concrete root cause for maintainer review",
+    ],
+    impact:
+      "Turned an opaque process-level crash into a reproducible defect with two independently reviewable repair paths: an upstream library fix and a downstream implementation that avoids the affected Asyncify path.",
+    duration: "2026",
+    teamSize: "1 developer",
+    role: "Contributor & PR Author",
   },
   {
     title: "BBS Harness — AI Structural Drawing Analyzer",
