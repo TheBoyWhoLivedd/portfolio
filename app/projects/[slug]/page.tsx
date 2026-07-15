@@ -149,9 +149,9 @@ export default function ProjectDetail({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Project Image or Placeholder */}
-          <div className="mb-8">
-            {"imageSrc" in project && project.imageSrc ? (
+          {/* Project Image (only when one is available) */}
+          {"imageSrc" in project && project.imageSrc && (
+            <div className="mb-8">
               <div className="relative rounded-lg overflow-hidden bg-slate-100 shadow-lg">
                 <Image
                   src={project.imageSrc}
@@ -162,34 +162,8 @@ export default function ProjectDetail({ params }: PageProps) {
                   priority
                 />
               </div>
-            ) : (
-              <div className="relative h-64 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center border-2 border-dashed border-blue-200">
-                <div className="text-center">
-                  <svg
-                    className="mx-auto h-16 w-16 text-blue-400 mb-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                    />
-                  </svg>
-                  <p className="text-blue-600 font-medium">
-                    {project.isNDA ? "Project Under NDA" : "Technical Case Study"}
-                  </p>
-                  <p className="text-blue-500 text-sm">
-                    {project.isNDA
-                      ? "Visuals are unavailable for confidential projects"
-                      : "Architecture and implementation details below"}
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </header>
 
         {/* Project Description */}
